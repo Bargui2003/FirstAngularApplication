@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
       if (event instanceof NavigationEnd) {
         setTimeout(() => {
           this.loaderService.hide(); // Cache le loader après ....secondes
-        }, 1500);
+        }, 700);
       }
     });
   }

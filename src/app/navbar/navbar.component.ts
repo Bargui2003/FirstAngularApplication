@@ -12,4 +12,15 @@ export class NavbarComponent {
      document.body.appendChild(link); 
      link.click(); document.body.removeChild(link); 
     }
+    onBlurEffect(event: FocusEvent): void {
+      const button = event.target as HTMLElement;
+      button.classList.remove('tracking-tight');
+      button.classList.add('tracking-widest');
+    }
+  
+    onFocusEffect(event: FocusEvent): void {
+      const button = event.target as HTMLElement;
+      button.classList.remove('tracking-widest');
+      button.classList.add('tracking-tight');
+    }  
 }
